@@ -12,7 +12,7 @@ export const router = new Router({
      component: Index
    },
    {
-     path: '/:id',
+     path: '/:zzz',
      name: 'show',
      component: Show
    }

@@ -24,7 +24,7 @@
 export default {
   created: function () {
     // eslint-disable-next-line no-unused-vars
-    var id = this.$route.params.id;
+    var id = this.$route.params.zzz;
     this.$http.get('/api/movies/'+id)
         .then((response) => {
           this.movie = response.data[0]

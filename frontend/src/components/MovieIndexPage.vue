@@ -4,13 +4,13 @@
     <ul class="movies">
       <li v-for="movie in movies" :key="movie" class="item">
         <span class="rank">{{movie.id}}</span>
-        <router-link :to="{ name: 'show', params: { id: movie.id }}">
+        <router-link :to="{ name: 'show', params: { zzz: movie.id }}">
           <img v-bind:src="movie.poster" class="poster">
         </router-link>
         <div class="detail">
           <strong class="tit">{{movie.name}}</strong>
           <span class="rate">예매율 <span class="num">{{movie.rate}}</span></span>
-          <router-link :to="{ name: 'show', params: { id: movie.id }}" class="link">자세히보기</router-link>
+          <router-link :to="{ name: 'show', params: { zzz: movie.id }}" class="link">자세히보기</router-link>
         </div>
       </li>
     </ul>
